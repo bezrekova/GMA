@@ -10,7 +10,7 @@ namespace PetShop
             PetShop shop = new PetShop();
             shop.AddPet(new Cat("Alice", "main coon"));
             shop.AddPet(new Dog("Terminator", "bulldog"));
-            shop.IntroduceAll();
+           // shop.IntroduceAll();
             shop.AddPet(new Cat("Belka", "american curl"));
             shop.AddPet(new Dog("Samuel", "foxhound"));
             shop.AddPet(new Dog("Alfred", "spaniel"));
@@ -18,7 +18,7 @@ namespace PetShop
             shop.IntroduceAll();
             //Console.WriteLine(MethodBase.GetCurrentMethod().DeclaringType.Name);
             // Console.WriteLine(shop.GetType().Name);
-
+            
 
             Console.ReadKey();
 

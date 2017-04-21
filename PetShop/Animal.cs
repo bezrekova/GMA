@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PetShop
 {
-    class Animal
+    class Animal:IComparable<Animal>
     {
         public string Name { get; set; }
         private string breed;
@@ -37,5 +37,10 @@ namespace PetShop
             return null;
         }
 
+        public int CompareTo(Animal other)
+        {
+            //return this.Name.CompareTo(other.Name);
+            return String.Compare(Name, other.Name, StringComparison.Ordinal);
+        }
     }
 }
